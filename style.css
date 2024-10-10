@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: antiquewhite;
+}
+
+.header{
+    background-color: white;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    /* justify-content: space-between; */
+    /* justify-content: center; */
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+#menu{
+    width: 35px;
+    height: 30px;
+    margin: 30px 0 20px 20px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.bar{
+    height: 5px;
+    width: 100%;
+    background-color: brown;
+    display: block;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+#bar1 {
+    transform: translate(-4px);
+}
+
+#bar3 {
+    transform: translate(4px);
+}
+
+.navbar li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar li a:hover{
+    border: 1px solid #fff;
+    padding: 10px 20px;
+}
+
+.navbar li {
+    list-style: none;
+    padding: 16px 0;
+}
+
+.navbar{
+    padding: 0;
+    margin: 0 20px;
+    transition: 1s ease;
+    display: none;
+}
+
+.icon .bar{
+    background-color: #995151;
+}
+
+.icon #bar1{
+    transform: translateY(4px) rotate(-45deg);
+}
+
+.icon #bar3{
+    transform: translateY(-6px) rotate(45deg);
+}
+
+.icon #bar2{
+    opacity: 0;
+}
+
+.change{
+    background-color: #f55c47;
+    height: 100vh;
+    margin: 0;
+    position: absolute;
+    font-size: 30px;
+    top: 0;
+    z-index: -100;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img{
+    width: 155px;
+    object-fit: cover;
+}
+
+.nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 142px;
+}
+
+.nav li{
+    height: 23px;
+    font-size: 24px;
+}
+
+.nav li:hover{
+    color: orange;
+    box-shadow: black;
+}
+
+.input{
+    border-radius: 4px;
+    opacity: 0.5;
+    width: 190px;
+    height: 32px;
+}
+
+#image{
+    border-radius: 25px;
+}
+
+.container{
+    margin: 45px;
+    width: 50%;
+    position: absolute;
+    right: 291px;
+}
+
+
+.card h1{
+    margin-top: 45px;
+    font-size: 32px;
+}
+
+@media only screen and (max-width: 800px){
+
+    .header{
+       justify-content: center;
+       align-items: center;
+       position: absolute;
+       margin-left: 40px;
+    }
+
+
+    .nav li{
+     font-size: 14px;
+    }
+
+    .nav ul{
+        gap: 30px;
+    }
+
+ .container{
+    right: auto;
+    width: auto;
+ }
+
+
+}
+
+@media only screen and (max-width: 1000px) {
+    .change{
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .change{
+        width: 100%;
+    }
+}
